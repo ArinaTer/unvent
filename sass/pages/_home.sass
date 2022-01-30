@@ -1,0 +1,372 @@
+//header
+.header__background
+    background: url(../image/fon.jpg)
+    background-size: cover
+    overflow: hidden
+
+.header__content
+    display: flex
+    padding-top: 2.1vw
+    grid-gap: 6.5vw
+    align-items: center
+    +r(1340)
+        grid-gap: 4.5vw
+    +r(1020)
+        grid-gap: 3.5vw
+    +r(720)
+        flex-direction: column
+
+.header__logo
+    display: flex
+    grid-gap: 1.7vw
+    align-items: center
+    +r(1020)
+        grid-gap: 3vw
+    +r(720)
+        align-items: flex-start
+        grid-gap: 30vw
+    a
+        +r(1340)
+            flex-basis: 80%
+            max-width: 80%
+        +r(1020)
+            flex-basis: 30%
+            max-width: 30%
+        +r(720)
+            flex-basis: 100%
+            max-width: 100%
+
+.burger
+    display: none
+    +r(720)
+        width: 52px
+        height: 34px
+        transition: .2s ease
+        position: relative
+        z-index: 6666
+    // &.is-active
+    //     background: $w
+    //     border-color: $w
+    //     +r(768)
+    //         background: $w
+    //         border-color: $w
+    //     span
+    //         background: $w
+    //         +r(768)
+    //             background: $w
+    //         &:first-child
+    //             transform: translateY(1px) rotate(45deg)
+    //         &:last-child
+    //             transform: translateY(-1px) rotate(-45deg)
+    span
+        width: 20px
+        height: 1px
+        background: $b
+        display: block
+        transition: .3s ease
+        margin: 0 auto
+        &:first-child
+            transform: translateY(4px)
+        &:last-child
+            transform: translateY(-4px)
+    +r(720)
+        display: block
+
+.info__text
+    font-size: 0.9vw
+    line-height: 1.2vw
+    letter-spacing: 0.6px
+    +r(1340)
+        max-width: 100%
+        flex-basis: 100%
+    +r(992)
+        font-size: 12px
+    +r(920)
+        font-size: 9px
+    +r(790)
+        font-size: 8px
+    +r(720)
+        display: none
+    span
+        +heavy
+
+.header__contacts
+    display: flex
+    justify-content: space-between
+    grid-gap: 6.3vw
+    align-items: center
+    +r(1220)
+        grid-gap: 4.5vw
+    +r(720)
+        grid-gap: 40vw
+    +r(650)
+        grid-gap: 35vw
+    +r(560)
+        grid-gap: 30vw
+
+.header__map
+    display: flex
+    position: relative
+    align-items: center
+    grid-gap: 0.5vw
+    +r(720)
+        display: none
+
+    img
+        width: 3.6vw
+        height: 3.6vw
+        border-radius: 1.8vw
+        +r(992)
+            width: 80px
+            height: 40px
+        +r(920)
+            width: 100px
+            height: 40px
+
+    .mark
+        position: absolute
+        top: 1.0vw
+        left: 1.5vw
+        width: 1.0vw
+        height: 1.3vw
+
+    .map__text
+        font-size: 0.8vw
+        line-height: 1.2vw
+        letter-spacing: 0.1vw
+        +r(992)
+            font-size: 10px
+        +r(820)
+            font-size: 8px
+        span
+            +heavy
+
+.header__button
+    .btn
+        width: 12.8vw
+        height: 3.6vw
+        border-radius: 0.3vw
+        background-color: $b31
+        color: $w
+        font-size: 0.8vw
+        line-height: 0.3vw
+        +r(992)
+            font-size: 9px
+        +r(820)
+            font-size: 7px
+        +r(720)
+            font-size: 13px
+            width: 200px
+            height: 40px
+        +r(720)
+
+
+.header__contact
+    display: flex
+    flex-direction: column
+    align-items: center
+    +r(720)
+        margin-top: -100px
+    +r(490)
+        display: none
+
+    .icons
+        display: flex
+        grid-gap: 0.5vw
+        padding-top: 0.3vw
+        justify-content: center
+        a
+            +r(1220)
+                max-width: 20%
+                flex-basis: 20%
+            +r(720)
+                max-width: 8%
+                flex-basis: 8%
+            +r(720)
+                max-width: 20%
+                flex-basis: 20%
+
+.contact__num
+    display: flex
+    grid-gap: 0.3vw
+    align-items: center
+    img
+        +r(1020)
+            max-width: 8%
+            flex-basis: 8%
+
+    .num__text
+        font-size: 1.1vw
+        line-height: 1.1vw
+        +heavy
+        +r(992)
+            font-size: 10px
+        +r(790)
+            font-size: 8px
+        +r(720)
+            font-size: 2.1vw
+
+.menu
+    display: flex
+    justify-content: space-between
+    padding: 0.3vw 0 0.6vw
+    +r(1220)
+        padding: 0.2vw 0 0.5vw
+    +r(720)
+        display: none
+
+.menu__link
+    font-size: 0.8vw
+    letter-spacing: 0.1vw
+    line-height: 8.3vw
+    text-transform: uppercase
+    +heavy
+    +r(1220)
+        line-height: 5.3vw
+    +r(992)
+        font-size: 10px
+    +r(820)
+        font-size: 8px
+    a
+        color: $b
+
+.banner__headlyne
+    .title
+        font-size: 3.0vw
+        letter-spacing: 0
+        line-height: 3.6vw
+        +r(992)
+            font-size: 30px
+        +r(820)
+            font-size: 26px
+        +r(720)
+            padding: 30px 0
+        +r(490)
+            font-size: 22px
+            line-height: 23px
+        span
+            +heavy
+
+.banner__info
+    display: flex
+    padding: 3.1vw 0
+    align-items: flex-start
+    grid-gap: 4.2vw
+
+    .text__info--num
+        font-size: 3.6vw
+        +heavy
+        +r(992)
+            font-size: 35px
+        +r(490)
+            font-size: 25px
+    .text__info
+        font-size: 1.0vw
+        +r(992)
+            font-size: 12px
+        +r(820)
+            font-size: 10px
+        span
+            +heavy
+
+.info__block
+    position: relative
+    display: flex
+    align-items: center
+    grid-gap: 1.0vw
+    .decor
+        position: absolute
+        top: -0.5vw
+        left: -1.0vw
+        width: 0.3vw
+        height: 1.0vw
+        background-color: #fe5851
+        transform: rotate(45deg)
+        transform-origin: center center
+
+.banner__slider
+    display: flex
+    grid-gap: 6.6vw
+    align-items: center
+    +r(1020)
+        grid-gap: 0.5vw
+
+.slider__items
+    +r(920)
+        max-width: 30%
+        flex-basis: 30%
+
+.slider__text
+    font-size: 0.9vw
+    line-height: 1.5vw
+    +reg
+    +r(992)
+        font-size: 12px
+    +r(820)
+        font-size: 10px
+    +r(720)
+        line-height: 16px
+    +r(490)
+        font-size: 8px
+    span
+        background-color: #ffff
+        padding: 0 1.3vw 0.2vw
+        border-radius: 0.3vw
+        +heavy
+        +r(820)
+            padding: 0 6px
+
+.slider__btn
+    padding-bottom: 2.6vw
+    padding-top: 1.6vw
+
+    .btn
+        width: 25.3vw
+        height: 5.2vw
+        border-radius: 0.3vw
+        border-color: #fd734f
+        font-size: 0.9vw
+        letter-spacing: 0
+        line-height: 1.3vw
+        color: #ffff
+        display: flex
+        text-align: left
+        grid-gap: 1.6vw
+        justify-content: center
+        align-items: center
+        text-transform: uppercase
+        filter: drop-shadow(0.0vw 1.0vw 24.0.3vw rgba(254,88,81,0.1)) drop-shadow(0.0vw 0.2vw 0.0vw #e63c3c)
+        background-image: linear-gradient(0deg, #fd4f4f 0%, #fd734f 100%)
+        +reg
+        +r(992)
+            font-size: 10px
+        +r(820)
+            font-size: 8px
+        +r(490)
+            width: 180px
+            height: 40px
+            line-height: 15px
+        img
+            +r(1020)
+                max-width: 10%
+                flex-basis: 10%
+
+.slider__title
+    text-align: center
+    font-size: 0.9vw
+    line-height: 1.5vw
+    +r(992)
+        font-size: 12px
+    +r(820)
+        font-size: 10px
+
+.slick-slider
+    display: flex
+    grid-gap: 0.5vw
+    align-items: center
+
+.prev__btn
+    transform: rotateY(2deg)
+
+.next__btn
+    transform: rotateY(180deg)
